@@ -15,3 +15,9 @@
 ```fs-write-file-custom.mjs``` - ESM file for writing a static html file from a template using process arguments
 
 ```app.js``` - server demo example
+
+## Run scripts
+
+```
+node file.extension
+```
