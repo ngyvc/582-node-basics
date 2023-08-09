@@ -18,6 +18,11 @@
 
 ## Run scripts
 
+Examples:
+
 ```
-node file.extension
+node index.js
+node add.js 123 789
+node add.js hello world
+node fs-write-file-custom.mjs about "About Us" "This is the about page."
 ```
