@@ -16,6 +16,16 @@
 
 ```app.js``` - server demo example
 
+```anatomy.js``` - [Anatomy of an HTTP Transaction](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction) A version of this demo, but displays POST JSON data
+
+```fs-read-with-callback.mjs``` - Reading and writing with callback with ESM style js
+
+```fs-read-with-callback.js``` - Reading and writing with callback with CJS style js
+
+```anatomy-template.js``` - Integrated server with template display for POST JSON data
+
+```express-demo``` - Express basics demo with handling ```all```, ```get```, ```post``` keywords and also using ```next``` in the callback to provide middleware functionality
+
 ## Run scripts
 
 Examples:
