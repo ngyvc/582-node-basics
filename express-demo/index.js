@@ -12,6 +12,7 @@ app.get("/users", (req, res, next) => {
   next();
 });
 
+// https://expressjs.com/en/starter/static-files.html
 app.use("/static", express.static("express-demo/public"));
 
 app.get("/", (req, res, next) => {
@@ -28,6 +29,7 @@ app.all("/", (req, res) => {
   console.log("Response has been sent!");
 });
 
+// https://expressjs.com/en/starter/faq.html
 app.use((req, res, next) => {
   res.status(404).sendFile(__dirname + "/public/404.html");
 });
