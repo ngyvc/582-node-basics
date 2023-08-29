@@ -12,6 +12,8 @@ app.get("/users", (req, res, next) => {
   next();
 });
 
+app.use("/static", express.static("express-demo/public"));
+
 app.get("/", (req, res, next) => {
   res.send("Hello World! " + req.method);
   next();
@@ -24,6 +26,10 @@ app.post("/", (req, res, next) => {
 
 app.all("/", (req, res) => {
   console.log("Response has been sent!");
+});
+
+app.use((req, res, next) => {
+  res.status(404).sendFile(__dirname + "/public/404.html");
 });
 
 app.listen(port, () => {
