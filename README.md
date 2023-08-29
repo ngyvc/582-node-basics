@@ -30,7 +30,7 @@
 
 Examples:
 
-```
+```js
 node index.js
 node add.js 123 789
 node add.js hello world
